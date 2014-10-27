@@ -1,1 +1,1 @@
-Coffeescript - pixie.js - testapp
+Coffeescript - pixi.js - testapp
