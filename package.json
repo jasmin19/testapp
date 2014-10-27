@@ -1,0 +1,11 @@
+{
+  "name": "testapp",
+  "description": "coffee-pixi-testapp",
+  "repository": "git@github.com:jasmin19/testapp",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-coffee": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-notify": "latest"
+  }
+}
