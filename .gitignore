@@ -1,1 +1,7 @@
 node_modules
+.DS_Store
+static/app
+static/build
+static/bootstrap.js
+static/bootstrap.json
+static/app.js
