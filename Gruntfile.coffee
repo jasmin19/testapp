@@ -4,20 +4,21 @@ module.exports = (grunt) ->
         watch:
             src:
                 files: [
-                    "src/*.coffee",
+                    "src/**/*.coffee",
                 ]
-                tasks: [ "coffee"]
+                tasks: ["coffee"]
                 options:
                     livereload: yes
 
         coffee:
-            options:           # coffee compile options
-                sourceMaps: yes
-            expand: yes        # use dynamic glob patterns when expanding src
-            cwd: "src"  # all src paths are relative to here
-            src:  [ "**/*.coffee" ]
-            dest: ""
-            ext: ".js"
+            app:
+                options:
+                    sourceMaps: yes
+                expand: yes
+                cwd:  "src"
+                src:  [ "*.coffee","**/*.coffee" ]
+                dest: "static"
+                ext: ".js"
 
     grunt.loadNpmTasks "grunt-contrib-coffee"
     grunt.loadNpmTasks "grunt-contrib-watch"
